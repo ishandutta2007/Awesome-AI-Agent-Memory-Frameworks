@@ -71,7 +71,7 @@ A comprehensive breakdown of commercial SaaS platforms powering production AI ag
 Explore the top open-source repositories powering autonomous agent memory, RAG context injection, and stateful agent coordination.
 
 > [!TIP]
-> All open-source projects are strictly sorted in descending order by GitHub Stars_Count. Click any Stars_Badge to view stargazers.
+> All open-source projects are strictly sorted in descending order by GitHub_Stars_Count. Click any Stars_Badge to view stargazers.
 
 | Project & Repository | GitHub_Stars | Primary Memory & Orchestration Architecture | License |
 | :--- | :--- | :--- | :--- |
@@ -129,7 +129,7 @@ We welcome contributions from developers, researchers, and maintainers across th
 
 1. 🍴 **Fork** this repository.
 2. 🌿 **Create a new branch**: `git checkout -b add/my-agent-memory-tool`.
-3. ✏️ **Add your entry**: Maintain table alignment, verify exact pricing or GitHub Stars_Counts, and ensure URLs point to the official site/repository.
+3. ✏️ **Add your entry**: Maintain table alignment, verify exact pricing or GitHub_Stars_Counts, and ensure URLs point to the official site/repository.
 4. 🚀 **Submit a Pull Request**: Provide a clear explanation of why the framework or tool fits the agent memory and orchestration ecosystem.
 
 ---
