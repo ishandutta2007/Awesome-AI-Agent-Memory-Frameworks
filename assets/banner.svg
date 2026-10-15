@@ -36,57 +36,56 @@
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
+
+    <style><![CDATA[
+      @keyframes pulseOrb {
+        0%, 100% { transform: scale(1) translate(0px, 0px); opacity: 0.35; }
+        50% { transform: scale(1.18) translate(30px, -20px); opacity: 0.6; }
+      }
+      @keyframes pulseOrb2 {
+        0%, 100% { transform: scale(1.1) translate(0px, 0px); opacity: 0.4; }
+        50% { transform: scale(0.9) translate(-40px, 25px); opacity: 0.65; }
+      }
+      @keyframes dashMove {
+        0% { stroke-dashoffset: 200; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes floatNode {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes memoryFlow {
+        0% { transform: translateX(0); opacity: 0; }
+        50% { opacity: 0.8; }
+        100% { transform: translateX(350px); opacity: 0; }
+      }
+
+      .bg-orb-1 {
+        transform-origin: 220px 110px;
+        animation: pulseOrb 8s ease-in-out infinite;
+      }
+      .bg-orb-2 {
+        transform-origin: 980px 220px;
+        animation: pulseOrb2 10s ease-in-out infinite;
+      }
+      .memory-wire {
+        stroke-dasharray: 8, 8;
+        animation: dashMove 15s linear infinite;
+      }
+      .floating-card-1 {
+        animation: floatNode 6s ease-in-out infinite;
+      }
+      .floating-card-2 {
+        animation: floatNode 7s ease-in-out infinite 1s;
+      }
+      .signal-dot {
+        animation: memoryFlow 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .signal-dot-delay {
+        animation: memoryFlow 4s cubic-bezier(0.4, 0, 0.2, 1) infinite 2s;
+      }
+    ]]></style>
   </defs>
-
-  <style>
-    /* Dynamic pulsing & flowing background elements */
-    @keyframes pulseOrb {
-      0%, 100% { transform: scale(1) translate(0px, 0px); opacity: 0.35; }
-      50% { transform: scale(1.18) translate(30px, -20px); opacity: 0.6; }
-    }
-    @keyframes pulseOrb2 {
-      0%, 100% { transform: scale(1.1) translate(0px, 0px); opacity: 0.4; }
-      50% { transform: scale(0.9) translate(-40px, 25px); opacity: 0.65; }
-    }
-    @keyframes dashMove {
-      0% { stroke-dashoffset: 200; }
-      100% { stroke-dashoffset: 0; }
-    }
-    @keyframes floatNode {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-8px); }
-    }
-    @keyframes memoryFlow {
-      0% { transform: translateX(0); opacity: 0; }
-      50% { opacity: 0.8; }
-      100% { transform: translateX(350px); opacity: 0; }
-    }
-
-    .bg-orb-1 {
-      transform-origin: 250px 100px;
-      animation: pulseOrb 8s ease-in-out infinite;
-    }
-    .bg-orb-2 {
-      transform-origin: 950px 240px;
-      animation: pulseOrb2 10s ease-in-out infinite;
-    }
-    .memory-wire {
-      stroke-dasharray: 8, 8;
-      animation: dashMove 15s linear infinite;
-    }
-    .floating-card-1 {
-      animation: floatNode 6s ease-in-out infinite;
-    }
-    .floating-card-2 {
-      animation: floatNode 7s ease-in-out infinite 1s;
-    }
-    .signal-dot {
-      animation: memoryFlow 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-    }
-    .signal-dot-delay {
-      animation: memoryFlow 4s cubic-bezier(0.4, 0, 0.2, 1) infinite 2s;
-    }
-  </style>
 
   <!-- Background Base -->
   <rect width="1200" height="360" fill="url(#bg-grad)" rx="16" />
@@ -113,25 +112,25 @@
   </g>
 
   <!-- Sub-decorative Floating Memory Context Badges (Positioned cleanly away from center text) -->
-  <g class="floating-card-1" opacity="0.75" transform="translate(60, 40)">
+  <g class="floating-card-1" opacity="0.85" transform="translate(60, 40)">
     <rect width="170" height="34" rx="17" fill="rgba(30, 41, 59, 0.75)" stroke="rgba(99, 102, 241, 0.4)" stroke-width="1" />
     <circle cx="18" cy="17" r="5" fill="#10b981" />
-    <text x="32" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">🧠 Long-Term Memory</text>
+    <text x="32" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Long-Term Memory</text>
   </g>
 
-  <g class="floating-card-2" opacity="0.75" transform="translate(970, 50)">
+  <g class="floating-card-2" opacity="0.85" transform="translate(970, 50)">
     <rect width="170" height="34" rx="17" fill="rgba(30, 41, 59, 0.75)" stroke="rgba(236, 72, 153, 0.4)" stroke-width="1" />
     <circle cx="18" cy="17" r="5" fill="#f59e0b" />
-    <text x="32" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">⚡ Stateful Agents</text>
+    <text x="32" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Stateful Agents</text>
   </g>
 
-  <g class="floating-card-1" opacity="0.75" transform="translate(990, 275)">
+  <g class="floating-card-1" opacity="0.85" transform="translate(990, 275)">
     <rect width="150" height="34" rx="17" fill="rgba(30, 41, 59, 0.75)" stroke="rgba(6, 182, 212, 0.4)" stroke-width="1" />
     <circle cx="18" cy="17" r="5" fill="#06b6d4" />
-    <text x="32" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">🔄 Multi-Agent Sync</text>
+    <text x="32" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Multi-Agent Sync</text>
   </g>
 
-  <!-- Central Foreground Content (Guaranteed Highest z-order & Clarity) -->
+  <!-- Central Foreground Content (Guaranteed Highest z-order and Clarity) -->
   <g id="foreground-content">
     <!-- Category Pill Tag -->
     <g transform="translate(600, 72)">
@@ -146,7 +145,7 @@
 
     <!-- Gradient Accent Subheading -->
     <text x="600" y="210" text-anchor="middle" fill="url(#primary-glow)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700" letter-spacing="0.5">
-      Long-Term Memory • Stateful Persistence • Context Management • Multi-Agent Orchestration
+      Long-Term Memory &#8226; Stateful Persistence &#8226; Context Management &#8226; Multi-Agent Orchestration
     </text>
 
     <!-- Descriptive Subtext -->
@@ -157,7 +156,7 @@
     <!-- Bottom Feature Highlights -->
     <g transform="translate(600, 298)">
       <text text-anchor="middle" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">
-        <tspan fill="#38bdf8">◆</tspan> Mem0 &amp; Letta  <tspan fill="#64748b" dx="8">|</tspan>  <tspan fill="#818cf8" dx="8">◆</tspan> LangGraph &amp; CrewAI  <tspan fill="#64748b" dx="8">|</tspan>  <tspan fill="#f472b6" dx="8">◆</tspan> Zep &amp; AutoGen  <tspan fill="#64748b" dx="8">|</tspan>  <tspan fill="#34d399" dx="8">◆</tspan> Dify &amp; Flowise
+        <tspan fill="#38bdf8">&#9670;</tspan> Mem0 &amp; Letta  <tspan fill="#64748b" dx="8">|</tspan>  <tspan fill="#818cf8" dx="8">&#9670;</tspan> LangGraph &amp; CrewAI  <tspan fill="#64748b" dx="8">|</tspan>  <tspan fill="#f472b6" dx="8">&#9670;</tspan> Zep &amp; AutoGen  <tspan fill="#64748b" dx="8">|</tspan>  <tspan fill="#34d399" dx="8">&#9670;</tspan> Dify &amp; Flowise
       </text>
     </g>
   </g>
