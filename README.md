@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-AI-Agent-Memory-Frameworks/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Agent-Memory-Frameworks?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Agent-Memory-Frameworks/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Agent-Memory-Frameworks?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-AI-Agent-Memory-Frameworks/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-AI-Agent-Memory-Frameworks?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-AI-Agent-Memory-Frameworks/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-AI-Agent-Memory-Frameworks/commits/main"><img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-AI-Agent-Memory-Frameworks" alt="Last Commit" /></a>
@@ -71,9 +71,9 @@ A comprehensive breakdown of commercial SaaS platforms powering production AI ag
 Explore the top open-source repositories powering autonomous agent memory, RAG context injection, and stateful agent coordination.
 
 > [!TIP]
-> All open-source projects are strictly sorted in descending order by GitHub star count. Click any star badge to view stargazers.
+> All open-source projects are strictly sorted in descending order by GitHub Stars_Count. Click any Stars_Badge to view stargazers.
 
-| Project & Repository | GitHub Stars | Primary Memory & Orchestration Architecture | License |
+| Project & Repository | GitHub_Stars | Primary Memory & Orchestration Architecture | License |
 | :--- | :--- | :--- | :--- |
 | **[AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)** | [![Stars](https://img.shields.io/github/stars/Significant-Gravitas/AutoGPT?style=social&color=white)](https://github.com/Significant-Gravitas/AutoGPT/stargazers) | Pioneer autonomous agent system with recursive task execution, file-backed long-term memory, and continuous execution graphs. | MIT |
 | **[Dify](https://github.com/langgenius/dify)** | [![Stars](https://img.shields.io/github/stars/langgenius/dify?style=social&color=white)](https://github.com/langgenius/dify/stargazers) | Collaborative agentic workflow engine with hybrid RAG context engines, conversation state persistence, and modular tool calling. | Apache-2.0 |
@@ -129,7 +129,7 @@ We welcome contributions from developers, researchers, and maintainers across th
 
 1. 🍴 **Fork** this repository.
 2. 🌿 **Create a new branch**: `git checkout -b add/my-agent-memory-tool`.
-3. ✏️ **Add your entry**: Maintain table alignment, verify exact pricing or GitHub star counts, and ensure URLs point to the official site/repository.
+3. ✏️ **Add your entry**: Maintain table alignment, verify exact pricing or GitHub Stars_Counts, and ensure URLs point to the official site/repository.
 4. 🚀 **Submit a Pull Request**: Provide a clear explanation of why the framework or tool fits the agent memory and orchestration ecosystem.
 
 ---
