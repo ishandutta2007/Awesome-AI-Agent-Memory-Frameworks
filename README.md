@@ -94,6 +94,7 @@ Explore the top open-source repositories powering autonomous agent memory, RAG c
 | **[AgentOps](https://github.com/AgentOps-AI/AgentOps)** | [![Stars](https://img.shields.io/github/stars/AgentOps-AI/AgentOps?style=social&color=white)](https://github.com/AgentOps-AI/AgentOps/stargazers) | SDK for agent monitoring, tracking memory retrieval latencies, recursion depth, model token spend, and multi-agent interactions. | MIT |
 | **[Zep](https://github.com/getzep/zep)** | [![Stars](https://img.shields.io/github/stars/getzep/zep?style=social&color=white)](https://github.com/getzep/zep/stargazers) | Fast long-term memory store for AI agents; continuously indexes conversations, extracts temporal knowledge graphs, and retrieves facts. | Apache-2.0 |
 | **[Ultravox](https://github.com/fixie-ai/ultravox)** | [![Stars](https://img.shields.io/github/stars/fixie-ai/ultravox?style=social&color=white)](https://github.com/fixie-ai/ultravox/stargazers) | Open-weights multimodal speech LLM with real-time audio token processing, streaming conversation context, and tool evaluation. | Apache-2.0 |
+| **[agent-qa](https://vostride.com)** ([GitHub](https://github.com/vostride/agent-qa)) | [![Stars](https://img.shields.io/github/stars/vostride/agent-qa?style=social&color=white)](https://github.com/vostride/agent-qa/stargazers) | QA agent with embedded memidex memory: reviewable facts and working procedures persist across web, Android and iOS runs, with evidence-gated self-improvement. | FSL-1.1-ALv2 |
 
 ---
 
